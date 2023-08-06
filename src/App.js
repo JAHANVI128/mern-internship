@@ -118,8 +118,8 @@ function App() {
     //     <Footer />
     // </div>
     <div className='App'>
-      {/* <UserComponent title = {title}/> */}
-      <StudentRegister/>
+      <UserComponent title = {title}/>
+      {/* <StudentRegister/> */}
     </div>
   );
 }

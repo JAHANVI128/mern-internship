@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { UserList } from "./UserList";
+import { UserRegistration } from "./UserRegistration";
 
 export const UserComponent = (props) => {
   const test = (user) => {
@@ -73,6 +74,7 @@ export const UserComponent = (props) => {
         delete={deleteUser}
         add = {addUser}
       />
+      <UserRegistration add = {addUser}/>
     </div>
   );
 };
