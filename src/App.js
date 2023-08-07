@@ -1,13 +1,18 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import { Footer } from './components/Footer';
-import { UserComponent } from './components/UserComponent';
-import { StudentRegister } from './components/StudentRegister';
+// import Header from './components/Header';
+// import { Footer } from './components/Footer';
+// import { UserComponent } from './components/UserComponent';
+// import { StudentRegister } from './components/StudentRegister';
 import { Navbar } from './components/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import { AboutUs } from './components/AboutUs';
 import { HomeCompponent } from './components/HomeCompponent';
+import { Company } from './components/Company';
+import { Country } from './components/Country';
+import { ContactUs } from './components/ContactUs';
+import { Director } from './components/Director';
+import { ApiDemo1 } from './components/ApiDemo1';
 
 function App() {
 
@@ -59,7 +64,7 @@ function App() {
   //   isActive:"false"
   // }]
 
-  var title = "User Application";
+  // var title = "User Application";
   return (
     // <div className="App">
     //   <Header />
@@ -129,6 +134,11 @@ function App() {
       <Routes>
         <Route path="/home" element={<HomeCompponent/>}></Route>
         <Route path="/aboutus" element={<AboutUs/>}></Route>
+        <Route path="/aboutus/company" element={<Company/>}></Route>
+        <Route path="/aboutus/country" element={<Country/>}></Route>
+        <Route path="/contactus" element={<ContactUs/>}></Route>
+        <Route path="/contactus/director/:id" element={<Director/>}></Route>
+        <Route path="/apidemo1" element={<ApiDemo1/>}></Route> 
       </Routes>
     </div>
   );
