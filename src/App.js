@@ -4,6 +4,10 @@ import Header from './components/Header';
 import { Footer } from './components/Footer';
 import { UserComponent } from './components/UserComponent';
 import { StudentRegister } from './components/StudentRegister';
+import { Navbar } from './components/Navbar';
+import { Route, Routes } from 'react-router-dom';
+import { AboutUs } from './components/AboutUs';
+import { HomeCompponent } from './components/HomeCompponent';
 
 function App() {
 
@@ -118,8 +122,14 @@ function App() {
     //     <Footer />
     // </div>
     <div className='App'>
-      <UserComponent title = {title}/>
+      {/* <UserComponent title = {title}/> */}
       {/* <StudentRegister/> */}
+      <Navbar/>
+
+      <Routes>
+        <Route path="/home" element={<HomeCompponent/>}></Route>
+        <Route path="/aboutus" element={<AboutUs/>}></Route>
+      </Routes>
     </div>
   );
 }
