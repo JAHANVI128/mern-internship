@@ -13,6 +13,7 @@ import { Country } from './components/Country';
 import { ContactUs } from './components/ContactUs';
 import { Director } from './components/Director';
 import { ApiDemo1 } from './components/ApiDemo1';
+import { ApiDemo2 } from './components/ApiDemo2';
 
 function App() {
 
@@ -139,6 +140,7 @@ function App() {
         <Route path="/contactus" element={<ContactUs/>}></Route>
         <Route path="/contactus/director/:id" element={<Director/>}></Route>
         <Route path="/apidemo1" element={<ApiDemo1/>}></Route> 
+        <Route path="/apidemo2" element={<ApiDemo2/>}></Route>
       </Routes>
     </div>
   );
