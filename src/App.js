@@ -15,6 +15,7 @@ import { Director } from './components/Director';
 import { ApiDemo1 } from './components/ApiDemo1';
 import { ApiDemo2 } from './components/ApiDemo2';
 import { UserLogin } from './components/UserLogin';
+import { ProtectedRoutes } from './hooks/ProtectedRoutes';
 
 function App() {
 
@@ -138,7 +139,10 @@ function App() {
         <Route path="/aboutus" element={<AboutUs/>}></Route>
         <Route path="/aboutus/company" element={<Company/>}></Route>
         <Route path="/aboutus/country" element={<Country/>}></Route>
-        <Route path="/contactus" element={<ContactUs/>}></Route>
+
+        <Route element={<ProtectedRoutes/>}>
+          <Route path="/contactus" element={<ContactUs/>}></Route>
+        </Route>
         <Route path="/contactus/director/:id" element={<Director/>}></Route>
         <Route path="/apidemo1" element={<ApiDemo1/>}></Route> 
         <Route path="/apidemo2" element={<ApiDemo2/>}></Route>
