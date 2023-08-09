@@ -14,6 +14,7 @@ import { ContactUs } from './components/ContactUs';
 import { Director } from './components/Director';
 import { ApiDemo1 } from './components/ApiDemo1';
 import { ApiDemo2 } from './components/ApiDemo2';
+import { UserLogin } from './components/UserLogin';
 
 function App() {
 
@@ -141,6 +142,7 @@ function App() {
         <Route path="/contactus/director/:id" element={<Director/>}></Route>
         <Route path="/apidemo1" element={<ApiDemo1/>}></Route> 
         <Route path="/apidemo2" element={<ApiDemo2/>}></Route>
+        <Route path="/login" element={<UserLogin/>}></Route>
       </Routes>
     </div>
   );
